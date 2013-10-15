@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+
+.top
+{
+	background-color: #cccccc;
+	height: 5px;
+	margin-top: -18px;
+	margin-left: 21px;
+	margin-right: 21px;
+}
+
+.top_left 
+{
+	background:	url(../imagenes/top_left.png) top left no-repeat;
+	height: 19px;
+}
+
+.top_right 
+{
+	height: 19px;
+	background: url(../imagenes/top_right.png) top right no-repeat;
+}
+
+.top_left + .left 
+{
+	background:	url(../imagenes/left.png) bottom left;
+	background-repeat:repeat-y;
+}
+
+.left > .right
+ {
+	background:	url(../imagenes/right.png) top right;
+	background-repeat:repeat-y;
+}
+
+
+.bottom_left 
+{
+	background:	url(../imagenes/bottom_left.png) top left no-repeat;
+	height:29px;
+	z-index:200;
+}
+
+.bottom_right 
+{
+	height:29px;
+	background: url(../imagenes/bottom_right.png) top right no-repeat;
+	z-index:200;
+}
+
+.bottom
+{
+	background-image:url(../imagenes/bottom.png);	
+	background-repeat:repeat-x;
+	height:14px;
+	margin-top:-14px;
+	margin-left:32px;
+	margin-right:32px;
+	padding-bottom:14px;
+}
+
+.interno 
+{
+	margin-top:-138px;
+	margin-right:14px; 
+	margin-left:14px; 
+	background-color:white;
+	padding-top:10px;
+	padding-bottom:10px;
+}

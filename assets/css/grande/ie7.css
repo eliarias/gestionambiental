@@ -1,0 +1,347 @@
+/* CSS */
+
+.interno 
+{
+	padding-top:0px;
+	padding-bottom:10px;	
+}
+
+#id_fuera_pestana,#id_pestana{display:inline;zoom:1;vertical-align:top;}
+
+#id_fuera_pestana 
+{
+	width:96%;
+}
+
+#id_pestana 
+{
+	width:44px;
+}
+
+#id_columna_izquierda,#id_columna_principal,#id_columna_derecha{display:inline;zoom:1;vertical-align:top;}
+
+#id_columna_izquierda {width:190px;}
+#id_columna_principal {width:92%;margin-left:-5px;}   /* reducir tamaño si existe contenido en columna derecha, a 58% */
+#id_columna_derecha {width:190px;}
+
+h1
+{
+	font-size: 22px;
+}
+
+h1
+{
+	font-size: 22px;
+}
+
+h2
+{
+	font-size: 16px;
+}
+
+h3
+{
+	font-size: 13px;
+}
+
+div.marco_principal
+{
+	max-width: 1180px;
+}
+
+div.pestana div
+{
+	background:url(../../imagenes/pestana.png) no-repeat;
+	background-position:right bottom;
+	margin-left:-36px;
+	margin-top:60px;
+	width:44px;
+	height:105px;
+	display:block;
+}
+
+div.pestana ul
+{
+	margin-left:10px;
+}
+
+div.contenidos
+{
+	display:block;
+}
+
+div.columna_derecha
+{
+	margin-right:-25px;
+}
+
+div.adorno_sitio
+{
+	position:relative;
+	z-index:3;
+}
+
+div.borde_gris
+{
+	padding-bottom:7px;
+}
+
+div.gradiente_azul_borde_final
+{
+	margin-bottom:-7px;
+	padding-bottom:0px;
+}
+
+.firma_ucr,.sub_encabezado1,.sub_encabezado2{display:inline;zoom:1;vertical-align:top;}
+
+.firma_ucr {width:171px;}
+.sub_encabezado1 {width:60%;}   
+.sub_encabezado2 {width:16%;}  
+
+div.sub_encabezado1 ul
+{
+	margin-top:-115px;
+	right:200px;
+}
+
+div.sub_encabezado1 ul li
+{
+	padding-right:10px;
+	padding-left:15px;
+}
+
+div.sub_encabezado1 ul li a
+{
+	padding-right:15px;	
+}
+
+div.sub_encabezado2
+{
+	float:right;
+	display:default;
+	margin-top:-70px;
+	margin-right:-70px;
+	vertical-align:top;
+}
+
+div.enlace_interes div.texto, div.enlace_interes div.imagen{display:inline;zoom:1;vertical-align:top;}
+
+div.enlace_interes div.texto
+{
+	width:65%;
+}
+
+div.enlace_interes div.imagen
+{
+	width:20%;
+	text-align:left;
+}
+
+#id_espacio_vertical 
+{
+	width:0px;
+}  
+
+
+div.fondo_titulo
+{
+	margin-right:25px;	
+	width:97.3%;
+}
+
+div.fondo_titulo h1
+{
+	padding-top:3px;
+	margin-bottom:12px;
+}
+
+div.columna_izquierda  div.nombre_sitio
+{
+	margin-bottom:10px;
+}
+
+div.columna_izquierda  div.module
+{
+	position:relative;
+	background:#cfd5d9;
+	top:0px;
+	width:190px;
+}
+
+div.columna_izquierda div.module_menu
+{
+	position:relative;
+	background:#cfd5d9;
+	top:0px;
+	width:190px;
+}
+
+div.columna_izquierda div.moduleseparador
+{
+	position:relative;
+	margin-top:-10px;
+}
+
+div.columna_izquierda ul.menu
+{
+	width:190px;
+	background:#cfd5d9;
+	display:block;
+	margin-top:0px;
+	padding-top:5px;
+	margin-left:0px;
+}
+
+div.columna_izquierda ul.menu li
+{
+	margin-left:25px;
+	width:150px;
+}
+
+div.columna_izquierda ul.menu ul 
+{
+	padding:0px;
+	width:150px;
+	left:0px;
+}
+
+div.columna_izquierda ul.menu ul li
+{
+	margin-left:30px;
+}
+
+div.columna_izquierda ul.menu a
+{
+	float:left;
+}
+
+div.columna_izquierda li img
+{
+	float:right;
+	margin-right:10px;
+	margin-bottom:-10px;
+}
+
+div.columna_izquierda div.bottom
+{
+	margin-top:-2px;
+}
+
+div.columna_izquierda div.abajo ul.menu
+{
+	background:white;
+}
+
+.top_left 
+{
+	max-width: 1150px;
+	min-width: 800px;
+}
+
+.left 
+{
+	max-width: 1150px;
+	min-width: 800px;
+}
+
+.right
+ {
+	max-width: 1150px;
+	min-width: 800px;
+}
+
+.bottom_left 
+{
+	max-width: 1150px;
+	min-width: 800px;
+}
+
+span.comillas
+{
+	font-size:38px;
+	position:relative;
+	font-family:Times new roman;
+	font-weight:bold;
+	line-height:0px;
+	bottom:0px;
+	margin:0;
+	padding:0;
+	padding-top:0px;
+	margin-top:0px;
+	bottom:-12px;
+}
+
+span.cierra
+{
+	position:relative;
+	top:-10px;
+	margin-bottom:-10px;
+	padding-bottom:-10px;
+	display:block;
+	margin-left:150px;
+}
+
+.cita
+{
+	margin:0px;
+	padding:0px;
+	margin-bottom:20px;
+}
+
+.cita p
+{	
+	text-indent:12px;
+}
+
+div.moduletable_cita p
+{
+	padding:10px;
+}
+
+div.moduletable_cita
+{
+	margin-bottom:15px;
+}
+
+div.columna_derecha ul
+{
+	width:190px;
+	margin-left: 10px;
+	list-style-image: url(../../imagenes/path.png);
+}
+
+div.columna_derecha ul li
+{
+	width:84%;
+	margin-left: 20px;	
+	padding-left:0px;
+	list-style-image: url(../../imagenes/path.png);
+}
+
+div.columna_derecha ul ul
+{
+	list-style-image:none;
+	margin-left:-10px;
+}
+
+div.columna_derecha ul ul li
+{
+	list-style-image:none;
+}
+
+div.search
+{
+	top:12px;
+	margin-left:25px;
+}
+
+div.sub_encabezado2 div.rawimages
+{
+	top:30px;
+	right:70px;
+}
+
+div.pie div.moduletable
+{
+	bottom:36px;
+}

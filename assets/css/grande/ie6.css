@@ -1,0 +1,279 @@
+/* CSS */
+
+body 
+{
+	background-image:none;
+	background-color:#b7c5d1;
+	padding-top:0px;
+	margin-top:0px;
+}
+
+#id_columna_derecha {margin-left:5px;}
+
+#id_fuera_pestana 
+{
+	width:1110px;
+}
+
+div.marco_principal
+{
+	display:block;	
+}
+
+div.marco_principal, div.marco_superior
+{
+	width:1180px;
+}
+
+.top
+{
+	background-image:url(../../imagenes/top.gif);	
+	background-repeat:repeat-x;
+	height: 22px;
+	margin-left:22px;
+	margin-right:22px;
+	margin-top:-22px;
+}
+
+.top_left 
+{
+	width:1112px;
+	background:	url(../../imagenes/top_left.gif) top left no-repeat;	
+	height: 22px;	
+}
+
+.top_right 
+{
+	background: url(../../imagenes/top_right.gif) bottom right no-repeat;	
+	height: 22px;
+}
+
+.left 
+{
+	background:	url(../../imagenes/left.gif) bottom left;
+	background-repeat:repeat-y;
+}
+
+.right
+ {
+	background:	url(../../imagenes/right.gif) top right;
+	background-repeat:repeat-y;
+}
+
+.img_caption
+{
+	background:	none;	
+}
+
+.bottom_left 
+{
+	width:1112px;
+	background:url(../../imagenes/bottom_left.gif) top left no-repeat;
+	height:22px;
+}
+
+.bottom_right 
+{
+	height: 22px;
+	background: url(../../imagenes/bottom_right.gif) top right no-repeat;
+}
+
+.bottom
+{
+	background-image:url(../../imagenes/bottom.gif);	
+	background-repeat:repeat-x;
+	height: 14px;
+	margin-top: -14px;
+	margin-left: 24px;
+	margin-right: 24px;
+	padding-bottom:14px;
+}
+
+.interno 
+{
+	margin-right: 16px; 
+	margin-left: 16px; 
+	background-color: white;
+	margin-top:-180px;
+	width:1080px;
+}
+
+div.fondo_encabezado
+{
+	top:-10px;
+	padding-left:4px;
+	display:block;
+	height:111px;
+	width:1080px;
+	background:url(../../imagenes/fondo_encabezado.png);
+}
+
+div.firma_ucr a
+{
+	display:block;
+	margin-top:15px;
+	width:170px;
+	height:63px;
+	background:url(../../imagenes/grande/firma_ucr.gif);
+}
+
+div.logo_sitio div
+{
+	display:block;
+	position:absolute;	
+	width:293px;
+	height:101px;
+	background-color:#43ADE7;
+	background:url(../../imagenes/granos_cintillo.gif);
+	z-index:0;
+	top:-10px;
+	right:-3px;
+}
+
+div.encabezado
+{
+	width:1000px;
+	height:111px;
+	padding-top:0px;
+	margin-top:0px;
+	padding-bottom:0px;
+	margin-bottom:0px;
+	padding-right:0px;
+}
+
+div.columna_derecha
+{
+	margin-top:20px;
+	width:190px;
+}
+
+div.pestana div
+{
+	margin-left:-38px;
+	background:url(../../imagenes/pestana.gif) right no-repeat;
+}
+
+div.pestana ul
+{
+	margin-top:24px;
+}
+
+#id_barra_titulo,#id_sub_encabezado1,#id_sub_encabezado2{display:inline;zoom:1;vertical-align:top;}
+
+div.barra_titulo
+{
+	display:default;
+	height:64px;
+	top:-10px;
+}
+
+#id_sub_encabezado1
+{
+	width:100%;
+	display:default;
+	margin-right:-1040px;
+}
+
+div.sub_encabezado1 ul
+{
+	margin-right:10px;
+	margin-top:-105px;
+	right:130px;
+}
+
+div.sub_encabezado1 ul ul
+{
+	width:200px;
+	position:absolute;
+	display:block;
+}
+
+div.sub_encabezado1 ul ul li
+{
+	background-color:transparent;
+	background:none;
+	width:200px;
+	float:left;
+	display:block;
+	position:relative;
+}
+
+#id_sub_encabezado2
+{
+	display:default;
+	margin-right:-140px;
+	margin-top:-36px;
+}
+
+div.sub_encabezado2 div.search input.button
+{
+	margin-top:1px;
+}
+
+div.columna_izquierda  div.nombre_sitio
+{
+	margin-bottom:0px;
+}
+
+div.columna_izquierda ul.menu 
+{		
+	padding-left:30px;
+	margin-right:-60px;
+}
+
+div.columna_izquierda ul.menu li
+{	
+	list-style-image: url(../../imagenes/path.gif);
+	margin-left:0px;
+	padding-left:0px;
+	margin-right:10px;
+}
+
+div.columna_izquierda  div.module
+{
+	width:190px;
+	margin:0px;
+	padding:0px;
+	background:#cfd5d9;
+}
+
+div.columna_principal div.ruta
+{
+	display:block;
+	width:100%;
+}
+
+div.pie
+{
+	margin-left:16px;
+	margin-right:16px;
+	width:1080px;
+	height:75px;
+	background:#ffffff url(../../imagenes/horizonte_inferior.gif) right no-repeat;
+	margin-bottom:-8px;
+}
+
+div.pie div.moduletable, div.pie div.module_menu, div.pie div.moduletable_menu
+{
+	bottom:-48px;
+}
+
+div.pie ul.menu
+{
+	bottom:-62px;
+}
+
+div.fondo_pie img
+{
+	display:none;
+}
+
+div.nombre_sitio
+{
+	width: 200px;
+}
+
+div.banner img
+{
+	width:560px;
+}
