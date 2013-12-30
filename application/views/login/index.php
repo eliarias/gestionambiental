@@ -47,9 +47,9 @@
                   <h2>Inicio de sesión</h2>
                  <?php echo form_open("login/entrar", 'id="formulario" style="width: 500px; font-size=100px"');?>
                  <?php echo form_label("Usuario");?>
-                 <?php echo form_input('usuario', ''); ?>
+                 <?php echo form_input('usuario', '', 'required'); ?>
                  <?php echo form_label("Contraseña");?>
-                 <?php echo form_password('password', ''); ?>
+                 <?php echo form_password('password', '', 'required'); ?>
                  <?php echo form_submit('enviar', 'Entrar',  'class = "button [tiny small large]"'); ?>
                  <?php echo form_close(); ?>
              </div>

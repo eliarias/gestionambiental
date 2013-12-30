@@ -29,8 +29,14 @@ class Posts extends CI_Controller {
 
 
 	public function insertar(){
-		redirect('posts/nuevo');
+		$titulo = $this->input->post('titulo');
+		$categoria = $this->input->post('categoria');
+		$cuerpo = $this->input->post('name1');
 
+		$userSession = $this->session->all_userdata();
+		$usuarioId = $userSession['usuarioId'];	
+		redirect("posts/nuevo");
+		
 	}
 
 

@@ -20,9 +20,8 @@ class Post extends CI_Model {
     /**
      * Inserta una nuevo post
      */
-    public function insertar(){
-        $data['contenido'] = array('titulo' => 'Prueba', 'categoria' => '2', 'cuerpo' => 'Esto es lo que pasó');
-        redirect("posts/nuevo", $data);
+    public function insertar($titulo, $categoria, $cuerpo, $usuario){
+
 
     }
 

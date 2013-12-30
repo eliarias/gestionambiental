@@ -83,7 +83,7 @@
                  </div>
                  
                  <div class="texto">
-                    <?php echo form_textarea(array('name' => 'name1','id' => 'editor1', 'rows' => '10', 'cols' => '10', 'required' => ''), $contenido['cuerpo'])?>
+                    <?php echo form_textarea(array('required' => 'required', 'name' => 'name1','id' => 'editor1', 'rows' => '10', 'cols' => '10'), $contenido['cuerpo'])?>
                      <small class="error">No puedes hacer una noticia si no escribes su contenido</small>
                  </div> 
                  
@@ -98,16 +98,12 @@
       <script src="<?php echo (base_url()); ?>assets/admin/editor/ckeditor.js"></script>
       <script>
          $(document).foundation();
-         CKEDITOR.replace('editor1');
+          CKEDITOR.replace('editor1');
          
       </script>
       <script type="text/javascript">
          $( document ).ready(function() {
-             if ($("#cke_editor1 iframe").contents().find("body").text().lenght() > 0){
-                
-             }
-
-
+              $("#editor1").attr('required', 'required');
          });
       </script>
    </body>

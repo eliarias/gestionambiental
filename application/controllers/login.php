@@ -45,7 +45,8 @@ class Login extends CI_Controller {
 				 'usuario' 		=> $fila->nickname,
 				 'nombre'  		=> $fila->nombre,
 				 'apellido1' 	=> $fila->apellidoUno,
-				 'apellido2' 	=> $fila->apellidoDos
+				 'apellido2' 	=> $fila->apellidoDos,
+				 'usuarioId'	=> $fila->usuarioId
 				);
 		}
 
