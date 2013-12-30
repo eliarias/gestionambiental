@@ -1,0 +1,8 @@
+create database gestion_ambiental;
+
+use gestion_ambiental;
+create user 'gestion'@'localhost' identified by 'gestion';
+create user 'gestion'@'%' identified by 'gestion';
+
+grant all on gestion_ambiental.* to 'gestion'@'localhost';
+grant all on gestion_ambiental.* to 'gestion'@'%';

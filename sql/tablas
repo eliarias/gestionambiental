@@ -1,0 +1,55 @@
+
+--  TABLA USURIOS
+create table usuarios(
+    usuarioId       INT AUTO_INCREMENT PRIMARY KEY,
+    nickname        VARCHAR(100) NOT NULL DEFAULT '',
+    nombre          VARCHAR(100) NOT NULL DEFAULT '', 
+    apellidoUno     VARCHAR(100) NOT NULL DEFAULT '',
+    apellidoDos     VARCHAR(100) NOT NULL DEFAULT '',
+    correo          VARCHAR(100) NOT NULL DEFAULT '',
+    telefonoUno     VARCHAR(9)   NOT NULL DEFAULT '',
+    telefonoDos     VARCHAR(9)   NOT NULL DEFAULT '',
+    fechaNacimento  DATETIME     NOT NULL DEFAULT 0,
+    creadoEl        TIMESTAMP    NOT NULL DEFAULT 0,
+    modificadoEl    TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP 
+                                 ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- TABLA CATEGORÍAS
+create table categorias(
+    categoriaId     INT AUTO_INCREMENT PRIMARY KEY,
+    nombreCategoria VARCHAR(100) NOT NULL DEFAULT '',
+    creadoEl        TIMESTAMP    NOT NULL DEFAULT 0,
+    modificadoEl    TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP 
+                                 ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+-- TABLA POSTS
+create table posts(
+    postId          INT AUTO_INCREMENT NOT NULL,
+    titulo          VARCHAR(100) NOT NULL DEFAULT '',
+    cuerpo          TEXT         NOT NULL DEFAULT '',
+    categoriaId     INT          NOT NULL DEFAULT 1,   -- Indica que es la categoría "sin categoría"
+    usuarioId       INT          NOT NULL DEFAULT 1,   -- Indica que se usa el usuario Anónimo
+    creadoEl        TIMESTAMP    NOT NULL DEFAULT 0,
+    modificadoEl    TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    CONSTRAINT  fk_postCategoria    FOREIGN KEY (categoriaId) REFERENCES categorias(categoriaId),
+    CONSTRAINT  fk_postUsuario      FOREIGN KEY (usuarioId)   REFERENCES usuarios(usuarioId),
+    PRIMARY KEY (postId, categoriaId, usuarioId)
+);
+
+
+
+-- TABLA COMENTARIOS
+create table comentarios(
+    comentarioId    INT          AUTO_INCREMENT,
+    comentario      TEXT         NOT NULL DEFAULT '',
+    usuarioId       INT          NOT NULL DEFAULT 1, -- indica que es el usuario anónimo
+    creadoEl        TIMESTAMP    NOT NULL DEFAULT 0,
+    modificadoEl    TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    CONSTRAINT  FOREIGN KEY   fk_comentarioUsuario (usuarioId) REFERENCES usuarios(usuarioId),
+    PRIMARY KEY (comentarioId, usuarioId)
+);
+
+
