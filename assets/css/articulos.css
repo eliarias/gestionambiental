@@ -1,0 +1,31 @@
+.articulo{
+	border-bottom: solid 1px gray;
+	border-left: solid 1px gray;
+	border-right: solid 1px gray;
+	margin-bottom: 10px;
+	border-radius: 5px;
+
+}
+
+.articulo .titulo{
+	background: #23538a; /* Old browsers */
+	background: -moz-linear-gradient(top, #23538a 6%, #a7cfdf 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(6%,#23538a), color-stop(100%,#a7cfdf)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #23538a 6%,#a7cfdf 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #23538a 6%,#a7cfdf 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #23538a 6%,#a7cfdf 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #23538a 6%,#a7cfdf 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23538a', endColorstr='#a7cfdf',GradientType=0 ); /* IE6-9 */
+	padding: 10px;
+	border-top: solid 1px gray;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+}
+.articulo .titulo  h1 a{
+	color: white;
+}
+
+.cuerpo{
+	padding: 20px;
+}

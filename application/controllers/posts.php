@@ -21,7 +21,11 @@ class Posts extends CI_Controller {
 		$this->load->helper("form");
 		$this->load->model("categoria");
 		$this->load->model("post");
-		$data['posts'] = $this->post->obtener_porid(1);
+		$userSession = $this->session->all_userdata();
+		$usuarioId = $userSession['usuarioId'];
+
+
+		$data['posts'] = $this->post->obtener_poridUsuario($usuarioId);
 		$data['categorias'] = $this->categoria->obtener_todo();
 		$data['contenido'] = array('titulo' => '', 'categoria' => '0', 'cuerpo' => '');
 		$this->load->view("posts/nuevo.php", $data);
@@ -34,9 +38,29 @@ class Posts extends CI_Controller {
 		$cuerpo = $this->input->post('name1');
 
 		$userSession = $this->session->all_userdata();
-		$usuarioId = $userSession['usuarioId'];	
+		$usuarioId = $userSession['usuarioId'];
+
+		$this->load->model("post");	
+		$this->post->insertar($titulo, $categoria, $cuerpo, $usuarioId);
+
 		redirect("posts/nuevo");
 		
+	}
+
+	public function editar($id){
+
+		$this->load->helper("form");
+		$this->load->model("categoria");
+		$this->load->model("post");
+		$userSession = $this->session->all_userdata();
+		$usuarioId = $userSession['usuarioId'];
+
+		$data['posts'] = $this->post->obtener_poridUsuario($usuarioId);
+		$data['categorias'] = $this->categoria->obtener_todo();
+		$data['contenido'] = array('titulo' => '', 'categoria' => '0', 'cuerpo' => '');
+		
+		$this->load->view("posts/nuevo.php", $data);
+
 	}
 
 

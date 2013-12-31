@@ -71,7 +71,7 @@
              </ul>
             </div>
                 <div class="large-9 medium-8 columns">
-                 <?php echo form_open("posts/insertar", 'data-abide');?>
+                 <?php echo form_open("posts/editar", 'data-abide');?>
                 <div class="titulo">
                   <label for="titulo"><h3>Título (Nueva entrada)</h3></label>
                   <?php echo form_input(array('name' => 'titulo', 'id' => 'titulo', 'cols' => '10'),$contenido['titulo'], 'required placeholder' ); ?>
